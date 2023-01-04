@@ -4,7 +4,7 @@
 </p>
 <p align='center' style='border-bottom: none;'><b>Geoid</b></p>
 <h1 align='center' style='border-bottom: none;'>Dymaxion</h1>
-<h3 align='center'>Spatial Data Directory</h3>
+<h3 align='center'>Unit Geometry Library</h3>
 </header>
 
 
@@ -45,7 +45,7 @@
 
 ## Authors
 
-**Earth Observer** is an open-source project by **[Geoid](https://www.geoid.org "Geoid website")**.
+**Dymaxion** is an open-source project by **[Geoid](https://www.geoid.org "Geoid website")**.
 
 **Geoid is a spatial operating system that covers our entire planet with an extended intelligent dimension.**
 This self-organizing network bridges our virtual and physical environments and is formed by all the people of our planet and the information and communication technologies that connect them. Geoid functions as a nervous system that mediates the data we produce and use in our daily lives, adds value to interconnectivity and cherishes spontaneous connections between people and the places and things they love.
@@ -92,3 +92,13 @@ Except where otherwise noted, **Earth Observer** by Geoid is licensed under the 
 - https://pypi.org/project/icosphere/
 - https://github.com/vedranaa/icosphere
 
+
+- https://github.com/brdo/icosahedron/blob/master/icosahedron.py
+
+- https://github.com/stephane-caron/pypoman/
+
+- https://github.com/spacetelescope/spherical_geometry
+
+
+- http://blog.andreaskahler.com/2009/06/creating-icosphere-mesh-in-code.html
+- https://sinestesia.co/blog/tutorials/python-icospheres/

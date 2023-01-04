@@ -1,9 +1,8 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 
 """
-Provides a Bearing entry point.
+Provides a Dyamxion entry point.
 """
 
 
@@ -20,7 +19,7 @@ except ImportError:
 # […]
 
 # Import | Libraries
-import bearing
+import dymaxion
 # […]
 
 # Import | Local Modules
@@ -30,15 +29,15 @@ import bearing
 if __name__ == "__main__":
 
     print()
-    print("Bearings are set!")
+    print("Dymaxion is set!")
     print()
-    print("Bearing: {}".format(bearing.__version__))
+    print("Dymaxion: {}".format(dymaxion.__version__))
     print("Python: {} ({})".format(platform.python_version(), platform.python_implementation()))
 
     if pkg_resources:
         working_set = pkg_resources.working_set
-        packages = set([p.project_name for p in working_set]) - set(["Bearing"])
-        bearing_pkgs = [p for p in packages if p.lower().startswith("bearing")]
+        packages = set([p.project_name for p in working_set]) - set(["Dymaxion"])
+        dymaxion_pkgs = [p for p in packages if p.lower().startswith("dymaxion")]
 
-        if bearing_pkgs:
-            print("Extensions: {}".format([p for p in bearing_pkgs]))
+        if dymaxion_pkgs:
+            print("Extensions: {}".format([p for p in dymaxion_pkgs]))

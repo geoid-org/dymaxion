@@ -69,14 +69,14 @@ def icosphere(nu = 1, nr_verts = None):
 
 def icosahedron():
     '''' Regular unit icosahedron. '''
-    
+
     # 12 principal directions in 3D space: points on an unit icosahedron
     phi = (1+np.sqrt(5))/2    
     vertices = np.array([
         [0, 1, phi], [0,-1, phi], [1, phi, 0],
         [-1, phi, 0], [phi, 0, 1], [-phi, 0, 1]])/np.sqrt(1+phi**2)
     vertices = np.r_[vertices,-vertices]
-    
+
     # 20 faces
     faces = np.array([
         [0,5,1], [0,3,5], [0,2,3], [0,4,2], [0,1,4], 

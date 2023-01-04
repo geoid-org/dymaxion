@@ -1,5 +1,0 @@
-matplotlib
-numpy
-shapely
-spherical_geometry
-svgwrite
