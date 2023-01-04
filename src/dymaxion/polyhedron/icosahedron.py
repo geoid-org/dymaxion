@@ -6,12 +6,11 @@ phi = (math.sqrt(5) + 1) / 2  # golden ratio
 
 class Icosahedron:
     """
+    Icosahedron Class
+    =================
 
     Regular unit icosahedron.
     """
-
-    # def __init__(self, nbrsides):
-    #     self.nbr_sides = nbrsides
 
     @staticmethod
     def vertices() -> list:

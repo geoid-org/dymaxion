@@ -1,25 +1,15 @@
+import math
+
 
 class Cube:
-    def __init__(self, r):
-        self.radius = radius
-        self.surfaceArea = 0
-        self.volume = 0
-    
-    def getRadius(self):
-        r = self.radius
-        self.area = 6 * r * r
-        return (self.area)
-    
-    def getVolume(self):
-        r = self.radius
-        self.volume = r * r * r
-        return (self.volume)
+    """
+    Cube Class
+    ==========
 
-class Cube:
+    Regular unit cube.
+    """
 
-    def __init__(self, nbrsides):
-        self.nbr_sides = nbrsides
-
+    @staticmethod
     def vertices() -> list:
         """
         """
@@ -35,8 +25,7 @@ class Cube:
         ]
         return vertices
 
-    edges = select_shortest_edges(vertices)
-
+    @staticmethod
     def faces() -> list:
         """
         """
@@ -49,3 +38,21 @@ class Cube:
             [1, 2, 5, 6],
         ]
         return faces
+
+    @staticmethod
+    def calc_area(r: float | int) -> float:
+        """
+
+        Formula to calculate area of Cube
+        """
+        area = 6 * r * r
+        return area
+
+    @staticmethod
+    def calc_volume(r: float | int) -> float:
+        """
+
+        Formula to calculate volume of Cube
+        """
+        volume = r * r * r
+        return volume
