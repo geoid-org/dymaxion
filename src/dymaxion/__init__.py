@@ -11,7 +11,7 @@ __copyright__ =     "Copyright 2023, Geoid"
 __credits__ =       [
                         "Lars van Vianen",
                     ]
-__license__ =       "MIT License"
+__license__ =       "Creative Commons Attribution-ShareAlike 4.0 International License"
 __version__ =       "0.0.0"
 __maintainer__ =    "Geoid"
 __email__ =         "info@geoid.org"

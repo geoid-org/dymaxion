@@ -60,14 +60,14 @@ website: [www.geoid.org](https://www.geoid.org "Geoid website")
 
 ## Contributing
 
-We'd love for you to contribute and to make **Earth Observer** even better than it is today!
+We'd love for you to contribute and to make **Dymaxion** even better than it is today!
 Please refer to the [contribution guidelines](.github/CONTRIBUTING.md) for information.
 
 
 ## License
 
 
-Except where otherwise noted, **Earth Observer** by Geoid is licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International License"). To view a copy of this license, visit [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International License") or write to Creative Commons, 171 Second Street, Suite 300, San Francisco, CA 94105, USA.
+Except where otherwise noted, **Dymaxion** by Geoid is licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International License"). To view a copy of this license, visit [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International License") or write to Creative Commons, 171 Second Street, Suite 300, San Francisco, CA 94105, USA.
 
 
 
@@ -75,30 +75,3 @@ Except where otherwise noted, **Earth Observer** by Geoid is licensed under the 
 
 **THIS SOFTWARE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-
-
-## Links
-
-
-
-#### dymaxion
-- https://github.com/alanbernstein/dymaxion
-
-#### dymax
-- https://pypi.org/project/dymax/
-- https://github.com/Teque5/pydymax
-
-#### icosphere
-- https://pypi.org/project/icosphere/
-- https://github.com/vedranaa/icosphere
-
-
-- https://github.com/brdo/icosahedron/blob/master/icosahedron.py
-
-- https://github.com/stephane-caron/pypoman/
-
-- https://github.com/spacetelescope/spherical_geometry
-
-
-- http://blog.andreaskahler.com/2009/06/creating-icosphere-mesh-in-code.html
-- https://sinestesia.co/blog/tutorials/python-icospheres/
