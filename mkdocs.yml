@@ -1,8 +1,7 @@
 site_name: Dymaxion
 site_url: https://www.dymaxion.world/
-site_description:
-site_author:
-copyright:
+site_description: Unit Geometry Library
+site_author: Geoid
 lang: en
 
 repo_name: 'GitHub'
@@ -17,9 +16,9 @@ theme:
   palette:
     scheme: geoid
   logo: assets/logo.png
-  favicon: assets/favicon/favicon.png
-  features:
-    - navigation.tabs
+  favicon: assets/favicon/favicon.ico
+  # features:
+  #   - navigation.tabs
 
 extra_css:
   - assets/style/extra.css
@@ -29,9 +28,9 @@ extra_templates:
 
 extra:
   generator: false
-  # analytics:
-  #   provider: google
-  #   property: G-XXXXXXXXXX
+  analytics:
+    provider: google
+    property: G-6FEJJ20F68
   social:
     - icon: fontawesome/solid/globe 
       link: https://www.geoid.org
