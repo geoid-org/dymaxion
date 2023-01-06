@@ -58,6 +58,10 @@ nav:
       - 'Links': 'resources/links.md'
   - About:
       - 'Authors': 'about/authors.md'
+  - Development:
+      - 'Roadmap': 'development/roadmap.md'
+      - 'Contributing': 'development/contributing.md'
+      - 'Code of Conduct': 'development/code_of_conduct.md'
   - Legal Information:
       - 'License': 'legal/license.md'
       - 'Privacy Policy': 'legal/privacy_policy.md'
