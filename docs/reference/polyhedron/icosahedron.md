@@ -1,6 +1,8 @@
-# Documentation for `Icosahedron`
+# `Icosahedron` Class Documentation
 
-References:
+
+## References
+
 - [Wikipedia | Icosahedron](https://en.wikipedia.org/wiki/Icosahedron)
 - [Wikipedia | Regular Icosahedron](https://en.wikipedia.org/wiki/Regular_icosahedron)
 

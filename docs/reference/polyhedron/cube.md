@@ -1,8 +1,10 @@
-# Documentation for `Cube`
+# `Cube` Class Documentation
 
 
-References:
+## References
+
 - [Wikipedia](https://en.wikipedia.org/wiki/Cube)
+
 
 ::: src.dymaxion.polyhedron.Cube
     handler: python

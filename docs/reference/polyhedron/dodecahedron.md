@@ -1,4 +1,4 @@
-# Documentation for `Dodecahedron`
+# `Dodecahedron` Class Documentation
 
 ::: src.dymaxion.polyhedron.Dodecahedron
     handler: python
