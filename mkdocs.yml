@@ -14,11 +14,13 @@ lang: en
 
 dev_addr: 127.0.0.1:8888
 
-plugins:
-  - search:
-      lang: en
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  - mkdocstrings
+# Copyright
+copyright: >
+  Copyright &copy; 2023 <a href="https://www.geoid.org">Geoid</a>. All Rights Reserved –
+  <a href="#__consent">Change cookie settings</a>
+
+# hide:
+#   - footer
 
 # Configuration
 theme:
@@ -28,27 +30,55 @@ theme:
   language: en
   palette:
     scheme: geoid
-    # primary: 'indigo'
-    # accent: 'red'
+  # palette:
+  #   - scheme: default
+  #     primary: indigo
+  #     accent: indigo
+  #     toggle:
+  #       icon: material/brightness-7
+  #       name: Switch to dark mode
+  #   - scheme: slate
+  #     primary: indigo
+  #     accent: indigo
+  #     toggle:
+  #       icon: material/brightness-4
+  #       name: Switch to light mode
   # font:
   #   text: 'Manrope'
   #   code: 'Roboto Mono'
   logo: assets/image/logo_light.png
   favicon: assets/favicon/favicon.ico
   features:
-  #   - navigation.tabs
-  #   - navigation.tabs.sticky
+    # - announce.dismiss
+    # - content.action.edit
+    # - content.action.view
+    # - content.code.annotate
+    # - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
     - navigation.expand
-    - navigation.indexes
-    - navigation.sections
     - navigation.footer
-    - navigation.top
+    - navigation.indexes
     # - navigation.instant
-  #   - toc.integrate
-    - toc.follow
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
     - navigation.tracking
     - search.highlight
+    - search.share
     - search.suggest
+    - toc.follow
+    # - toc.integrate
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - mkdocstrings
 
 # Customization
 extra:
@@ -85,25 +115,49 @@ extra_javascript:
   - assets/script/extra.js
 extra_templates:
 
-# Copyright
-copyright: >
-  Copyright &copy; 2023 <a href="https://www.geoid.org">Geoid</a>. All Rights Reserved –
-  <a href="#__consent">Change cookie settings</a>
 
 # Extensions
-# markdown_extensions:
-#   - meta
-#   - md_in_html
-#   - toc:
-#       permalink: true
-#   - pymdownx.emoji:
-#       emoji_index: !!python/name:materialx.emoji.twemoji
-#       emoji_generator: !!python/name:materialx.emoji.to_svg
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  # - toc:
+  #     permalink: true
+  # - pymdownx.arithmatex:
+  #     generic: true
+  # - pymdownx.betterem:
+  #     smart_enable: all
+  # - pymdownx.caret
+  # - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  # - pymdownx.highlight:
+  #     anchor_linenums: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.keys
+  # - pymdownx.magiclink:
+  #     repo_url_shorthand: true
+  #     user: squidfunk
+  #     repo: mkdocs-material
+  # - pymdownx.mark
+  # - pymdownx.smartsymbols
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  # - pymdownx.tilde
 
-# hide:
-#   - footer
 
-
+# Page tree
 nav:
   - Introduction: 'index.md'
   - Quick Start: 'quick_start.md'
