@@ -38,6 +38,8 @@ import math
 
 __all__ = ["Octahedron", ]
 
+Num = Union[int, float]
+
 
 # =============================================================================
 # Classes
@@ -51,7 +53,7 @@ class Octahedron:
     """
 
     @staticmethod
-    def vertices() -> list:
+    def vertices() -> List[Num]:
         """
         Vertices Static Method
 
@@ -70,53 +72,3 @@ class Octahedron:
             [0, 0, 1],
         ]
         return vertices
-
-    @staticmethod
-    def faces() -> list:
-        """
-        Faces Static Method
-
-        Returns:
-            faces (list): The return value.
-
-        """
-        faces = [
-        ]
-        return faces
-
-    @staticmethod
-    def calc_area(r: float | int) -> float:
-        """
-        Calculate Area Static Method
-        ----------------------------
-
-        Formula to calculate the area of a Octahedron
-
-        Parameters:
-            r (float | int): The radius of the Octahedron.
-
-        Returns:
-            area (float): The area of the Octahedron.
-
-        """
-        # area = float(6 * r * r)
-        # return area
-        pass
-
-    @staticmethod
-    def calc_volume(r: float | int) -> float:
-        """
-        Calculate Volume Static Method
-        ----------------------------
-
-        Formula to calculate the volume of a Octahedron
-
-        Args:
-            r (float | int): The radius of the Octahedron.
-
-        Returns:
-            area (float): The area of the Octahedron.
-
-        """
-        volume = float(r * r * r)
-        return volume

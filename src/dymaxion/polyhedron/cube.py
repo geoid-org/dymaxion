@@ -38,6 +38,8 @@ from ..utils.math import phi
 
 __all__ = ["Cube", ]
 
+Num = Union[int, float]
+
 
 # =============================================================================
 # Classes
@@ -51,7 +53,7 @@ class Cube:
     """
 
     @staticmethod
-    def vertices() -> list:
+    def vertices() -> List[Num]:
         """
         Vertices Static Method
 
@@ -74,7 +76,7 @@ class Cube:
         return vertices
 
     @staticmethod
-    def faces() -> list:
+    def get_unit_faces() -> List[Num]:
         """
         Faces Static Method
 
@@ -93,7 +95,7 @@ class Cube:
         return faces
 
     @staticmethod
-    def calc_area(radius: float | int) -> float:
+    def calc_area_from_edge_length(a: float | int) -> float:
         """
         Calculate Area Static Method
         ----------------------------
@@ -101,29 +103,77 @@ class Cube:
         Formula to calculate the area of a Cube
 
         Parameters:
-            radius (float | int): The radius of the Cube.
+            edge_length (float | int): The radius of the Cube.
 
         Returns:
             area (float): The area of the Cube.
 
         """
-        area = float(6 * radius * radius)
+        area = float(6 * a * a)
         return area
 
     @staticmethod
-    def calc_volume(radius: float | int) -> float:
+    def calc_volume_from_edge_length(a: float | int) -> float:
         """
         Calculate Volume Static Method
-        ----------------------------
+        ------------------------------
 
         Formula to calculate the volume of a Cube
 
-        Args:
-            radius (float | int): The radius of the Cube.
+        Parameters:
+            a (float | int): The edge length of the Cube.
 
         Returns:
             area (float): The area of the Cube.
 
         """
-        volume = float(radius * radius * radius)
+        volume = float(a * a * a)
         return volume
+
+    @staticmethod
+    def calc_face_diagonal_from_edge_length(a: float | int) -> float:
+        """
+
+        """
+        face_diagonal = float(math.sqrt(a * a))
+        return face_diagonal
+
+    @staticmethod
+    def calc_space_diagonal_from_edge_length(a: float | int) -> float:
+        """
+
+        """
+        space_diagonal = float(math.sqrt(a * a * a))
+        return space_diagonal
+
+    @staticmethod
+    def calc_radius_circumscribed(a: float | int) -> float:
+        """
+        radius of circumscribed sphere
+        """
+        radius_circumscribed = float((math.sqrt(3) / 2) * a)
+        return radius_circumscribed
+
+    @staticmethod
+    def calc_radius_inscribed(a: float | int) -> float:
+        """
+        radius of inscribed sphere
+        """
+        radius_inscribed = float(a / 2)
+        return radius_inscribed
+
+    @staticmethod
+    def calc_radius_edges(a: float | int) -> float:
+        """
+        radius of sphere tangent to edges
+        """
+        radius_edges = float(a / math.sqrt(2))
+        return radius_edges
+
+    @staticmethod
+    def calc_face_angles() -> float:
+        """
+        angles between faces (in radians)
+        """
+        face_angles = phi / 2
+        return face_angles

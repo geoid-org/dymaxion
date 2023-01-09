@@ -38,6 +38,8 @@ from ..utils.math import phi
 
 __all__ = ["Icosahedron", ]
 
+Num = Union[int, float]
+
 
 # =============================================================================
 # Classes
@@ -52,7 +54,7 @@ class Icosahedron:
     """
 
     @staticmethod
-    def vertices() -> list:
+    def vertices() -> List[Num]:
         """
         12 principal directions in 3D space: points on an unit Icosahedron.
 
@@ -83,7 +85,7 @@ class Icosahedron:
         return vertices
 
     @staticmethod
-    def faces() -> list:
+    def faces() -> List[Num]:
         """
         20 faces
         """
@@ -96,7 +98,7 @@ class Icosahedron:
         return faces
 
     @staticmethod
-    def calc_area(a: float | int) -> float:
+    def calc_area_from_edge_length(a: float | int) -> float:
         """
 
         Formula to calculate area of Icosahedron
@@ -105,7 +107,7 @@ class Icosahedron:
         return area
 
     @staticmethod
-    def calc_volume(a: float | int) -> float:
+    def calc_volume_from_edge_length(a: float | int) -> float:
         """
 
         Formula to calculate volume of Icosahedron
