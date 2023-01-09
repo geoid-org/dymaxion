@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+src/dymaxion/__init__.py
+src/dymaxion/__main__.py
+src/dymaxion.egg-info/PKG-INFO
+src/dymaxion.egg-info/SOURCES.txt
+src/dymaxion.egg-info/dependency_links.txt
+src/dymaxion.egg-info/top_level.txt
+src/dymaxion.egg-info/zip-safe
+src/dymaxion/polyhedron/__init__.py
+src/dymaxion/polyhedron/cube.py
+src/dymaxion/polyhedron/icosahedron.py
