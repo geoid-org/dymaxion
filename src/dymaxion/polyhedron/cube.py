@@ -73,7 +73,6 @@ class Cube:
     def faces() -> list:
         """
         Faces Static Method
-        ===================
 
         Returns:
             faces (list): The return value. True for success, False otherwise.
@@ -95,23 +94,32 @@ class Cube:
         Calculate Area Static Method
         ----------------------------
 
-        Formula to calculate area of Cube
+        Formula to calculate the area of a Cube
 
-        Args:
+        Parameters:
             r (float | int): The radius of the cube.
 
         Returns:
-            area (float):The area of the cube.
+            area (float): The area of the cube.
 
         """
-        area = 6 * r * r
+        area = float(6 * r * r)
         return area
 
     @staticmethod
     def calc_volume(r: float | int) -> float:
         """
+        Calculate Volume Static Method
+        ----------------------------
 
-        Formula to calculate volume of Cube
+        Formula to calculate the volume of a Cube
+
+        Args:
+            r (float | int): The radius of the cube.
+
+        Returns:
+            area (float): The area of the cube.
+
         """
-        volume = r * r * r
+        volume = float(r * r * r)
         return volume
