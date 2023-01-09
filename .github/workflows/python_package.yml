@@ -3,16 +3,16 @@
 
 name: Python package
 
-on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
-# on: [push]
 # on:
 #   push:
-#     branches:
-#       - master 
+#     branches: [ $default-branch ]
+#   pull_request:
+#     branches: [ $default-branch ]
+# on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
