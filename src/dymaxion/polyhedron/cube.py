@@ -1,10 +1,52 @@
+# -*- coding: utf-8 -*-
+
+
+# =============================================================================
+# Docstring
+# =============================================================================
+
+"""
+Provides Cube Class
+===================
+...
+
+Todo:
+-----
+
+Links:
+------
+
+"""
+
+
+# =============================================================================
+# Import
+# =============================================================================
+
+# Import | Standard Library
+from typing import Dict, List, Union
 import math
+
+# Import | Libraries
+
+# Import | Local Modules
+
+
+# =============================================================================
+# Variables
+# =============================================================================
+
+__all__ = ["Cube", ]
+
+
+# =============================================================================
+# Classes
+# =============================================================================
 
 
 class Cube:
     """
     Cube Class
-    ==========
 
     Regular unit cube.
     """
@@ -12,6 +54,8 @@ class Cube:
     @staticmethod
     def vertices() -> list:
         """
+        Vertices Static Method
+
         """
         vertices = [
             [-1, -1, -1],
@@ -28,6 +72,12 @@ class Cube:
     @staticmethod
     def faces() -> list:
         """
+        Faces Static Method
+        ===================
+
+        Returns:
+            faces (list): The return value. True for success, False otherwise.
+
         """
         faces = [
             [0, 1, 2, 3],
@@ -42,8 +92,17 @@ class Cube:
     @staticmethod
     def calc_area(r: float | int) -> float:
         """
+        Calculate Area Static Method
+        ----------------------------
 
         Formula to calculate area of Cube
+
+        Args:
+            r (float | int): The radius of the cube.
+
+        Returns:
+            area (float):The area of the cube.
+
         """
         area = 6 * r * r
         return area

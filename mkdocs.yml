@@ -178,7 +178,9 @@ nav:
   - Quick Start: 'quick_start.md'
   - Reference:
     - 'reference/index.md'
-    - 'Icosahedron': 'reference/icosahedron.md'
+    - Polyhedron:
+      - 'Cube': 'reference/polyhedron/cube.md'
+      - 'Icosahedron': 'reference/polyhedron/icosahedron.md'
   - Resources:
     - 'Glossary': 'resources/glossary.md'
     - 'Links': 'resources/links.md'
