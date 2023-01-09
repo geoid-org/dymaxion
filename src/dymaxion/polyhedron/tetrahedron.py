@@ -6,8 +6,8 @@
 # =============================================================================
 
 """
-Provides Cube Class
-===================
+Provides Tetrahedron Class
+==========================
 ...
 
 Todo:
@@ -30,22 +30,22 @@ import math
 # Import | Libraries
 
 # Import | Local Modules
-from ..utils.math import phi
+
 
 # =============================================================================
 # Variables
 # =============================================================================
 
-__all__ = ["Cube", ]
+__all__ = [" Tetrahedron", ]
 
 
 # =============================================================================
 # Classes
 # =============================================================================
 
-class Cube:
+class Tetrahedron:
     """
-    Cube Class
+     Tetrahedron Class
 
     Regular unit cube.
     """
@@ -56,20 +56,22 @@ class Cube:
         Vertices Static Method
 
         Vertex coordinates:
-        (±1, ±1, ±1)
+        ( 1,  1,  1)
+        ( 1, -1, -1)
+        (-1,  1, -1)
+        (-1, -1,  1)
+        or:
+        (-1, -1, -1)
+        (-1,  1,  1)
+        ( 1, -1,  1)
+        ( 1,  1, -1)
 
-        Returns:
-            vertices (list): The vertex coordinates of the Cube.
         """
         vertices = [
-            [-1, -1, -1],
-            [-1, -1, 1],
-            [-1, 1, 1],
-            [-1, 1, -1],
-            [1, -1, -1],
-            [1, -1, 1],
             [1, 1, 1],
-            [1, 1, -1],
+            [1, -1, -1],
+            [-1, 1, -1],
+            [-1, -1, 1],
         ]
         return vertices
 
@@ -93,37 +95,37 @@ class Cube:
         return faces
 
     @staticmethod
-    def calc_area(radius: float | int) -> float:
+    def calc_area(r: float | int) -> float:
         """
         Calculate Area Static Method
         ----------------------------
 
-        Formula to calculate the area of a Cube
+        Formula to calculate the area of a  Tetrahedron
 
         Parameters:
-            radius (float | int): The radius of the Cube.
+            r (float | int): The radius of the Tetrahedron.
 
         Returns:
-            area (float): The area of the Cube.
+            area (float): The area of the Tetrahedron.
 
         """
-        area = float(6 * radius * radius)
+        area = float(6 * r * r)
         return area
 
     @staticmethod
-    def calc_volume(radius: float | int) -> float:
+    def calc_volume(r: float | int) -> float:
         """
         Calculate Volume Static Method
         ----------------------------
 
-        Formula to calculate the volume of a Cube
+        Formula to calculate the volume of a  Tetrahedron
 
         Args:
-            radius (float | int): The radius of the Cube.
+            r (float | int): The radius of the Tetrahedron.
 
         Returns:
-            area (float): The area of the Cube.
+            area (float): The area of the Tetrahedron.
 
         """
-        volume = float(radius * radius * radius)
+        volume = float(r * r * r)
         return volume

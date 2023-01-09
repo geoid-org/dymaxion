@@ -53,7 +53,7 @@ theme:
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    - navigation.expand
+    # - navigation.expand
     - navigation.footer
     - navigation.indexes
     # - navigation.instant
@@ -179,19 +179,22 @@ nav:
   - Reference:
     - 'reference/index.md'
     - Polyhedron:
+      - 'Tetrahedron': 'reference/polyhedron/tetrahedron.md'
       - 'Cube': 'reference/polyhedron/cube.md'
+      - 'Octahedron': 'reference/polyhedron/octahedron.md'
       - 'Icosahedron': 'reference/polyhedron/icosahedron.md'
+      - 'Dodecahedron': 'reference/polyhedron/dodecahedron.md'
   - Resources:
     - 'Glossary': 'resources/glossary.md'
     - 'Links': 'resources/links.md'
   - About:
     - 'Authors': 'about/authors.md'
-  - Development:
-    - 'Roadmap': 'development/roadmap.md'
-    - 'Contributing': 'development/contributing.md'
-    - 'Code of Conduct': 'development/code_of_conduct.md'
-  - Legal Information:
-    - 'License': 'legal/license.md'
-    - 'Privacy Policy': 'legal/privacy_policy.md'
-    - 'Disclaimer': 'legal/disclaimer.md'
+    - Development:
+      - 'Roadmap': 'development/roadmap.md'
+      - 'Contributing': 'development/contributing.md'
+      - 'Code of Conduct': 'development/code_of_conduct.md'
+    - Legal Information:
+      - 'License': 'legal/license.md'
+      - 'Privacy Policy': 'legal/privacy_policy.md'
+      - 'Disclaimer': 'legal/disclaimer.md'
 

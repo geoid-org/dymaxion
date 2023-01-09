@@ -6,7 +6,7 @@
 # =============================================================================
 
 """
-Provides Cube Class
+Provides Dodecahedron Class
 ===================
 ...
 
@@ -30,22 +30,22 @@ import math
 # Import | Libraries
 
 # Import | Local Modules
-from ..utils.math import phi
+
 
 # =============================================================================
 # Variables
 # =============================================================================
 
-__all__ = ["Cube", ]
+__all__ = ["Dodecahedron", ]
 
 
 # =============================================================================
 # Classes
 # =============================================================================
 
-class Cube:
+class Dodecahedron:
     """
-    Cube Class
+    Dodecahedron Class
 
     Regular unit cube.
     """
@@ -55,11 +55,9 @@ class Cube:
         """
         Vertices Static Method
 
-        Vertex coordinates:
+        Vertice coordinates:
         (±1, ±1, ±1)
 
-        Returns:
-            vertices (list): The vertex coordinates of the Cube.
         """
         vertices = [
             [-1, -1, -1],
@@ -93,37 +91,37 @@ class Cube:
         return faces
 
     @staticmethod
-    def calc_area(radius: float | int) -> float:
+    def calc_area(r: float | int) -> float:
         """
         Calculate Area Static Method
         ----------------------------
 
-        Formula to calculate the area of a Cube
+        Formula to calculate the area of a Dodecahedron
 
         Parameters:
-            radius (float | int): The radius of the Cube.
+            r (float | int): The radius of the cube.
 
         Returns:
-            area (float): The area of the Cube.
+            area (float): The area of the cube.
 
         """
-        area = float(6 * radius * radius)
+        area = float(6 * r * r)
         return area
 
     @staticmethod
-    def calc_volume(radius: float | int) -> float:
+    def calc_volume(r: float | int) -> float:
         """
         Calculate Volume Static Method
         ----------------------------
 
-        Formula to calculate the volume of a Cube
+        Formula to calculate the volume of a Dodecahedron
 
         Args:
-            radius (float | int): The radius of the Cube.
+            r (float | int): The radius of the cube.
 
         Returns:
-            area (float): The area of the Cube.
+            area (float): The area of the cube.
 
         """
-        volume = float(radius * radius * radius)
+        volume = float(r * r * r)
         return volume

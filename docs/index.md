@@ -11,6 +11,7 @@
 ---
 
 
+**Dymaxion** is a Unit Geometry Library written in Python, with a focus on polyhedra, specifically Platonic solids, and their associated spherical functions.
 
 
 ---

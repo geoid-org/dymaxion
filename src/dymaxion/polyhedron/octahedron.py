@@ -6,8 +6,8 @@
 # =============================================================================
 
 """
-Provides Cube Class
-===================
+Provides Octahedron Class
+=========================
 ...
 
 Todo:
@@ -30,24 +30,24 @@ import math
 # Import | Libraries
 
 # Import | Local Modules
-from ..utils.math import phi
+
 
 # =============================================================================
 # Variables
 # =============================================================================
 
-__all__ = ["Cube", ]
+__all__ = ["Octahedron", ]
 
 
 # =============================================================================
 # Classes
 # =============================================================================
 
-class Cube:
+class Octahedron:
     """
-    Cube Class
+    Octahedron Class
 
-    Regular unit cube.
+    Regular unit Octahedron.
     """
 
     @staticmethod
@@ -56,20 +56,18 @@ class Cube:
         Vertices Static Method
 
         Vertex coordinates:
-        (±1, ±1, ±1)
+        (±1,  0,  0)
+        ( 0, ±1,  0)
+        ( 0,  0, ±1)
 
-        Returns:
-            vertices (list): The vertex coordinates of the Cube.
         """
         vertices = [
-            [-1, -1, -1],
-            [-1, -1, 1],
-            [-1, 1, 1],
-            [-1, 1, -1],
-            [1, -1, -1],
-            [1, -1, 1],
-            [1, 1, 1],
-            [1, 1, -1],
+            [-1, 0, 0],
+            [1, 0, 0],
+            [0, -1, 0],
+            [0, 1, 0],
+            [0, 0, -1],
+            [0, 0, 1],
         ]
         return vertices
 
@@ -79,51 +77,46 @@ class Cube:
         Faces Static Method
 
         Returns:
-            faces (list): The return value. True for success, False otherwise.
+            faces (list): The return value.
 
         """
         faces = [
-            [0, 1, 2, 3],
-            [4, 5, 6, 7],
-            [0, 1, 4, 5],
-            [2, 3, 6, 7],
-            [0, 3, 4, 7],
-            [1, 2, 5, 6],
         ]
         return faces
 
     @staticmethod
-    def calc_area(radius: float | int) -> float:
+    def calc_area(r: float | int) -> float:
         """
         Calculate Area Static Method
         ----------------------------
 
-        Formula to calculate the area of a Cube
+        Formula to calculate the area of a Octahedron
 
         Parameters:
-            radius (float | int): The radius of the Cube.
+            r (float | int): The radius of the Octahedron.
 
         Returns:
-            area (float): The area of the Cube.
+            area (float): The area of the Octahedron.
 
         """
-        area = float(6 * radius * radius)
-        return area
+        # area = float(6 * r * r)
+        # return area
+        pass
 
     @staticmethod
-    def calc_volume(radius: float | int) -> float:
+    def calc_volume(r: float | int) -> float:
         """
         Calculate Volume Static Method
         ----------------------------
 
-        Formula to calculate the volume of a Cube
+        Formula to calculate the volume of a Octahedron
 
         Args:
-            radius (float | int): The radius of the Cube.
+            r (float | int): The radius of the Octahedron.
 
         Returns:
-            area (float): The area of the Cube.
+            area (float): The area of the Octahedron.
 
         """
-        volume = float(radius * radius * radius)
+        volume = float(r * r * r)
         return volume

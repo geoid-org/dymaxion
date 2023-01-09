@@ -1,8 +1,47 @@
+# -*- coding: utf-8 -*-
+
+
+# =============================================================================
+# Docstring
+# =============================================================================
+
+"""
+Provides Icosahedron Class
+==========================
+...
+
+Todo:
+-----
+
+Links:
+------
+
+"""
+
+
+# =============================================================================
+# Import
+# =============================================================================
+
+# Import | Standard Library
+from typing import Dict, List, Union
 import math
 
+# Import | Libraries
 
-phi = (math.sqrt(5) + 1) / 2  # golden ratio
+# Import | Local Modules
+from ..utils.math import phi
 
+# =============================================================================
+# Variables
+# =============================================================================
+
+__all__ = ["Icosahedron", ]
+
+
+# =============================================================================
+# Classes
+# =============================================================================
 
 class Icosahedron:
     """
@@ -15,7 +54,17 @@ class Icosahedron:
     @staticmethod
     def vertices() -> list:
         """
-        12 principal directions in 3D space: points on an unit icosahedron.
+        12 principal directions in 3D space: points on an unit Icosahedron.
+
+        Vertex coordinates:
+        ( 0, ±1, ±φ)
+        (±1, ±φ,  0)
+        (±φ,  0, ±1)
+        or:
+        ( 0, ±φ, ±1)
+        (±φ, ±1,  0)
+        (±1,  0, ±φ)
+
         """
         vertices = [
             [0, phi, 1],

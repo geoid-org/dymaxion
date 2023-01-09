@@ -1,7 +1,4 @@
 # Documentation for `Icosahedron`
 
-::: src.dymaxion.polyhedron.icosahedron.Icosahedron
+::: src.dymaxion.polyhedron.Icosahedron
     handler: python
-    options:
-        show_root_heading: false
-        show_source: false

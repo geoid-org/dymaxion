@@ -55,7 +55,7 @@
 
 ## About
 
-Dymaxion is an Unit Geometry Library in Python.
+**Dymaxion** is a Unit Geometry Library written in Python, with a focus on polyhedra, specifically Platonic solids, and their associated spherical functions.
 
 
 ## Quick Start

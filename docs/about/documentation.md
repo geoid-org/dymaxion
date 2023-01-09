@@ -23,3 +23,9 @@ mkdocstrings
 Automatic documentation from sources, for MkDocs.
 
 https://mkdocstrings.github.io/
+
+
+
+MkDocs for building static pages from Markdown
+mkdocstrings for auto-generating documentation from docstrings in your code
+Material for MkDocs for styling your documentation
