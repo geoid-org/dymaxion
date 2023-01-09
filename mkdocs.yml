@@ -3,14 +3,11 @@ site_name: Dymaxion
 site_url: https://www.dymaxion.world/
 site_description: Unit Geometry Library
 site_author: Geoid
-base_url: https://www.dymaxion.world/
 
 # Repository
 repo_name: 'GitHub'
 repo_url: https://github.com/geoid-org/dymaxion/
 edit_uri_template: 'docs/{path}'
-
-lang: en
 
 dev_addr: 127.0.0.1:8888
 
@@ -77,13 +74,14 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  - mkdocstrings:
-    custom_templates: templates
-    default_handler: python
-    handlers:
-      python:
-        options:
-          show_source: false
+  - mkdocstrings
+  # - mkdocstrings:
+  #   custom_templates: templates
+  #   default_handler: python
+  #   handlers:
+  #     python:
+  #       options:
+  #         show_source: false
 
 # Customization
 extra:
