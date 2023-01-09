@@ -36,7 +36,7 @@ import math
 # Variables
 # =============================================================================
 
-__all__ = [" Tetrahedron", ]
+__all__ = ["Tetrahedron", ]
 
 Num = Union[int, float]
 
