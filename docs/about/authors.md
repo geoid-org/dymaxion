@@ -9,7 +9,7 @@
 
 This self-organizing network bridges our virtual and physical environments and is formed by all the people of our planet and the information and communication technologies that connect them. Geoid functions as a nervous system that mediates the data we produce and use in our daily lives, adds value to interconnectivity and cherishes spontaneous connections between people and the places and things they love.
 
-- website: [www.geoid.org](https://www.geoid.org "Geoid website")
+- website: [geoid.org](https://www.geoid.org "Geoid website")
 - github: [github.com/geoid-org](https://github.com/geoid-org "Geoid Github")
 
 

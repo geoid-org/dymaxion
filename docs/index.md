@@ -7,3 +7,11 @@
 <h3 align='center'>Unit Geometry Library</h3>
 </header>
 
+---
+
+
+
+
+---
+
+**Dymaxion** is an open-source project by **[Geoid](https://www.geoid.org "Geoid website")** and **[Scape Agency](https://www.scape.agency "Scape Agency website")**.
