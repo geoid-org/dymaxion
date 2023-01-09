@@ -73,21 +73,18 @@ theme:
 plugins:
   - search:
       lang: en
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      # separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - mkdocstrings:
+  #   custom_templates: templates
       default_handler: python
       handlers:
         python:
-          setup_commands:
-            - import sys
-            - sys.path.append("src")
-  # - mkdocstrings:
-  #   custom_templates: templates
-  #   default_handler: python
-  #   handlers:
-  #     python:
-  #       options:
-  #         show_source: false
+          options:
+            show_source: false
+          # setup_commands:
+          #   - import sys
+          #   - sys.path.append("src")
+
 
 # Customization
 extra:
