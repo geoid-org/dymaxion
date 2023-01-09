@@ -16,3 +16,6 @@ __version__ =       "0.0.0"
 __maintainer__ =    "Geoid"
 __email__ =         "info@geoid.org"
 __status__ =        "Alpha"
+
+
+from .polyhedron import *
