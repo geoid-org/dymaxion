@@ -15,13 +15,17 @@
 
 ## Parameters
 
-| Symbol         | Parameter      | Description    |
+| Parameter      | Symbol         | Name      | Description    |
 |----------------|----------------|----------------|
-| a              | Edge length    |                |
-| r              | Radius         |                |
-| A0             | Face area      |                |
-| A              | Surface area   |                |
-| h              | Height         |                |
-| V              | Volume         |                |
-| l              |                | Edge to opposite edge distance   |
+| a              | $a$ | Edge length    |                |
+| r              | $r$               | Radius         |                |
+| r_u            | $r_u$               |          |                |
+| r_i            | $r_i$               |          |                |
+| r_m            | $r_m$               |          |                |
+| A0             | $A0$               | Face area      |                |
+| A              | $A$               | Surface area   |                |
+| h              | $h$               | Height         |                |
+| V              | $V$               | Volume         |                |
+| l              | $l$               |                | Edge to opposite edge distance   |
+
 

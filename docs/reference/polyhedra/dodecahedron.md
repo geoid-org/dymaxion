@@ -11,6 +11,7 @@
 ## References
 
 - [Wikipedia | Dodecahedron](https://en.wikipedia.org/wiki/Dodecahedron)
+- [Wikipedia | Regular Dodecahedron](https://en.wikipedia.org/wiki/Regular_dodecahedron)
 
 
 ## Class Documentation

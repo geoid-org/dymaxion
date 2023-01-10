@@ -57,7 +57,7 @@ class Dodecahedron:
         """
         Vertices Static Method
 
-        The following Cartesian coordinates define the 20 vertices of a regular 
+        The following Cartesian coordinates define the 20 vertices of a regular
         dodecahedron centered at the origin and suitably scaled and oriented:
 
         Vertex coordinates:
@@ -109,7 +109,8 @@ class Dodecahedron:
 
         Formula to calculate volume of Dodecahedron
         """
-        volume = (1 / 4) * (15 + 7 * math.sqrt(5)) * a * a * a
+        volume = 0.25 * (15 + 7 * math.sqrt(5)) * a * a * a
+        # volume = (1 / 4) * (15 + 7 * math.sqrt(5)) * a * a * a
         return volume
 
     @staticmethod
@@ -119,21 +120,24 @@ class Dodecahedron:
         the radius of a circumscribed sphere (one that touches the Dodecahedron
         at all vertices)
 
+        ~ 1.401258538 * a
+
         """
-        radius = (a / 4) * math.sqrt(10 + 2 * math.sqrt(5))
-        # radius = a * math.sin((2* phi) / 5)
+        radius = a * (math.sqrt(3) / 4) * (1 + math.sqrt(5))
         return radius
 
     @staticmethod
     def calc_radius_insphere(a) -> float:
         """
         Radius of insphere that is tangent to faces
-        The radius of an inscribed sphere (tangent to each of the 
+        The radius of an inscribed sphere (tangent to each of the
         Dodecahedron's faces) is
 
+        ~ 1.113516364 * a
+
         """
-        # radius = (phi * phi * a) / (2 * math.sqrt(3))
-        radius = (math.sqrt(3) / 12) * (3 + math.sqrt(5)) * a
+        radius = a * 0.5 * math.sqrt(2.5 + 1.1 * math.sqrt(5))
+        # radius = a * (1 / 2) * math.sqrt((5 / 2) + (11 / 10) * math.sqrt(5))
         return radius
 
     @staticmethod
@@ -143,9 +147,9 @@ class Dodecahedron:
 
         while the midradius, which touches the middle of each edge, is
 
+        ~ 1.309016994 * a
+
         """
-        radius = (a * phi) / 2
-        # radius = (1 / 4) * (1 + math.sqrt(5)) * a
-        # radius = 0.25 * (1 + math.sqrt(5)) * a
-        # radius = a * math.cos(phi / 5)
+        radius = a * 0.25 * (3 + math.sqrt(5))
+        # radius = a * (1 / 4) * (3 + math.sqrt(5))
         return radius
