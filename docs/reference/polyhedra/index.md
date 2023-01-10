@@ -15,8 +15,8 @@
 
 ## Parameters
 
-| Parameter      | Symbol         | Name      | Description    |
-|----------------|----------------|----------------|
+| Parameter      | Symbol         | Name           | Description    |
+|----------------|----------------|----------------|----------------|
 | a              | $a$ | Edge length    |                |
 | r              | $r$               | Radius         |                |
 | r_u            | $r_u$               |          |                |
