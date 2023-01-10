@@ -22,7 +22,6 @@
 <div align="center">
 
   [![license](https://img.shields.io/github/license/geoid-org/dymaxion?color=green&label=license&style=flat)](LICENSE.md)
-
   [![website](https://img.shields.io/website?color=blue&down_color=red&down_message=offline&label=website&style=flat&up_color=green&up_message=online&url=https%3A%2F%2Fwww.dymaxion.world)](https://www.dymaxion.world)
   [![DOI](https://zenodo.org/badge/584927070.svg)](https://zenodo.org/badge/latestdoi/584927070)
 
