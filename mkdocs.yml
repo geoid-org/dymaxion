@@ -178,7 +178,7 @@ nav:
     - 'reference/index.md'
     - Polyhedron:
       - 'Tetrahedron': 'reference/polyhedron/tetrahedron.md'
-      - 'Cube': 'reference/polyhedron/cube.md'
+      - 'Hexahedron': 'reference/polyhedron/hexahedron.md'
       - 'Octahedron': 'reference/polyhedron/octahedron.md'
       - 'Icosahedron': 'reference/polyhedron/icosahedron.md'
       - 'Dodecahedron': 'reference/polyhedron/dodecahedron.md'
