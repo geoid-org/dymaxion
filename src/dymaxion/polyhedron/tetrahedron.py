@@ -158,3 +158,103 @@ class Tetrahedron:
         """
         distance = (1 / math.sqrt(2)) * a
         return distance
+
+    @staticmethod
+    def calc_angle_face_vertex_edge(a) -> float:
+        """
+        Face-vertex-edge angle
+        (approx. 54.7356°)
+
+        """
+        # angle = math.acos(1 / math.sqrt(3))
+        angle = math.atan(math.sqrt(2))
+        return angle
+
+    @staticmethod
+    def calc_angle_face_edge_face(a) -> float:
+        """
+        Face-edge-face angle, i.e., "dihedral angle"
+        (approx. 70.5288°)
+
+        """
+        angle = math.acos(1 / 3)
+        # angle = math.atan(2 * math.sqrt(2))
+        return angle
+
+    @staticmethod
+    def calc_face_angle_face_edge_face(a) -> float:
+        """
+        Vertex-Center-Vertex angle
+        The angle between lines from the tetrahedron center to any two
+        vertices. It is also the angle between Plateau borders at a vertex.
+        In chemistry it is called the tetrahedral bond angle. This angle
+        (in radians) is also the length of the circular arc on the unit sphere
+        resulting from centrally projecting one edge of the tetrahedron to the
+        sphere.
+
+        (approx. 109.4712°)
+
+        """
+        angle = math.acos(-1 / 3)
+        # angle = 2 * math.atan(math.sqrt(2))
+        return angle
+
+    @staticmethod
+    def calc_angle_solid(a) -> float:
+        """
+        Solid angle at a vertex subtended by a face
+        (approx. 0.55129 steradians)
+        (approx. 1809.8 square degrees)
+
+        """
+        angle = math.acos(23 / 27)
+        return angle
+
+    @staticmethod
+    def calc_radius_circumsphere(a) -> float:
+        """
+        Radius of circumsphere
+
+        """
+        # radius = (math.sqrt(6) / 4) * a
+        radius = math.sqrt(3 / 8) * a
+        return radius
+
+    @staticmethod
+    def calc_radius_insphere(a) -> float:
+        """
+        Radius of insphere that is tangent to faces
+
+        """
+        # radius = (1 / 3) * Tetrahedron.calc_radius_circumsphere(a)
+        radius = a / math.sqrt(24)
+        return radius
+
+    @staticmethod
+    def calc_radius_insphere(a) -> float:
+        """
+        Radius of midsphere that is tangent to edges
+
+        """
+        # radius = math.sqrt(Tetrahedron.calc_radius_circumsphere(a) * Tetrahedron.calc_radius_insphere(a))  # noqa E501
+        radius = a / math.sqrt(8)
+        return radius
+
+    @staticmethod
+    def calc_radius_exsphere(a) -> float:
+        """
+        Radius of exspheres
+
+        """
+        radius = a / math.sqrt(6)
+        return radius
+
+    @staticmethod
+    def calc_distance_exsphere_vertex(a) -> float:
+        """
+        Distance to exsphere center from the opposite vertex
+
+        """
+        # distance = (math.sqrt(6) / 2) * a
+        distance = math.sqrt(3 / 2) * a
+        return distance
