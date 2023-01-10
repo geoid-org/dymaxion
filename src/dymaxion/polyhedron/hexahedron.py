@@ -6,7 +6,7 @@
 # =============================================================================
 
 """
-Provides Cube Class
+Provides Hexahedron Class
 ===================
 ...
 
@@ -36,7 +36,7 @@ from ..utils.math import phi
 # Variables
 # =============================================================================
 
-__all__ = ["Cube", ]
+__all__ = ["Hexahedron", ]
 
 Num = Union[int, float]
 
@@ -45,9 +45,9 @@ Num = Union[int, float]
 # Classes
 # =============================================================================
 
-class Cube:
+class Hexahedron:
     """
-    Cube Class
+    Hexahedron Class
 
     Regular unit cube.
     """
@@ -61,7 +61,7 @@ class Cube:
         (±1, ±1, ±1)
 
         Returns:
-            vertices (list): The vertex coordinates of the Cube.
+            vertices (list): The vertex coordinates of the Hexahedron.
         """
         vertices = [
             [-1, -1, -1],
@@ -100,13 +100,13 @@ class Cube:
         Calculate Area Static Method
         ----------------------------
 
-        Formula to calculate the area of a Cube
+        Formula to calculate the area of a Hexahedron
 
         Parameters:
-            edge_length (float | int): The radius of the Cube.
+            edge_length (float | int): The radius of the Hexahedron.
 
         Returns:
-            area (float): The area of the Cube.
+            area (float): The area of the Hexahedron.
 
         """
         area = float(6 * a * a)
@@ -118,13 +118,13 @@ class Cube:
         Calculate Volume Static Method
         ------------------------------
 
-        Formula to calculate the volume of a Cube
+        Formula to calculate the volume of a Hexahedron
 
         Parameters:
-            a (float | int): The edge length of the Cube.
+            a (float | int): The edge length of the Hexahedron.
 
         Returns:
-            area (float): The area of the Cube.
+            area (float): The area of the Hexahedron.
 
         """
         volume = float(a * a * a)

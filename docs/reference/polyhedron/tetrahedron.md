@@ -4,7 +4,7 @@
 ## Overview
 
 <p align="center">
-    <img src="/assets/image/polyhedra/tetrahedron.gif" width="50%" height="50%" alt="Tetrahedron">
+    <img src="/assets/image/polyhedra/tetrahedron.gif" width="33%" height="33%" alt="Tetrahedron">
 </p>
 
 
@@ -13,6 +13,7 @@
 - [Wikipedia | Tetrahedron](https://en.wikipedia.org/wiki/Tetrahedron)
 
 
+## Class Documentation
 
 ::: src.dymaxion.polyhedron.Tetrahedron
     handler: python
