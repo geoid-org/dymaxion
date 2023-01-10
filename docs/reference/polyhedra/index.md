@@ -17,7 +17,11 @@
 
 | Symbol         | Parameter      | Description    |
 |----------------|----------------|----------------|
-| a0             | Face area      |                |
-| a              | Surface area   |                |
+| a              | Edge length    |                |
+| r              | Radius         |                |
+| A0             | Face area      |                |
+| A              | Surface area   |                |
 | h              | Height         |                |
+| V              | Volume         |                |
+| l              |                | Edge to opposite edge distance   |
 
