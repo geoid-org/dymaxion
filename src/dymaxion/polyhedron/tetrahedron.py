@@ -231,7 +231,7 @@ class Tetrahedron:
         return radius
 
     @staticmethod
-    def calc_radius_insphere(a) -> float:
+    def calc_radius_midsphere(a) -> float:
         """
         Radius of midsphere that is tangent to edges
 

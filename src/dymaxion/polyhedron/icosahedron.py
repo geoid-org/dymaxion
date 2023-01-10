@@ -114,3 +114,46 @@ class Icosahedron:
         """
         volume = ((5 / 12) * (3 + math.sqrt(5)) * a * a * a)
         return volume
+
+    @staticmethod
+    def calc_radius_circumsphere(a) -> float:
+        """
+        Radius of circumsphere
+        the radius of a circumscribed sphere (one that touches the icosahedron
+        at all vertices)
+
+        ~ 0.9510565163 * a
+
+        """
+        # radius = (a / 2) * math.sqrt(phi * math.sqrt(5))
+        radius = (a / 4) * math.sqrt(10 + 2 * math.sqrt(5))
+        # radius = a * math.sin((2* phi) / 5)
+        return radius
+
+    @staticmethod
+    def calc_radius_insphere(a) -> float:
+        """
+        Radius of insphere that is tangent to faces
+        The radius of an inscribed sphere (tangent to each of the 
+        icosahedron's faces) is
+
+        ~ 0.7557613141 * a
+
+        """
+        # radius = (phi * phi * a) / (2 * math.sqrt(3))
+        radius = (math.sqrt(3) / 12) * (3 + math.sqrt(5)) * a
+        return radius
+
+    @staticmethod
+    def calc_radius_midsphere(a) -> float:
+        """
+        Radius of midsphere that is tangent to edges
+
+        while the midradius, which touches the middle of each edge, is
+
+        """
+        radius = (a * phi) / 2
+        # radius = (1 / 4) * (1 + math.sqrt(5)) * a
+        # radius = 0.25 * (1 + math.sqrt(5)) * a
+        # radius = a * math.cos(phi / 5)
+        return radius
