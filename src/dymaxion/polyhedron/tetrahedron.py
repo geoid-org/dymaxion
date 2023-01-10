@@ -30,6 +30,7 @@ import math
 # Import | Libraries
 
 # Import | Local Modules
+from ..utils.math import phi
 
 
 # =============================================================================
@@ -58,15 +59,18 @@ class Tetrahedron:
         Vertices Static Method
 
         Vertex coordinates:
-        ( 1,  1,  1)
-        ( 1, -1, -1)
-        (-1,  1, -1)
-        (-1, -1,  1)
+
+        ( 1,  1,  1)\
+        ( 1, -1, -1)\
+        (-1,  1, -1)\
+        (-1, -1,  1)\
+
         or:
-        (-1, -1, -1)
-        (-1,  1,  1)
-        ( 1, -1,  1)
-        ( 1,  1, -1)
+
+        (-1, -1, -1)\
+        (-1,  1,  1)\
+        ( 1, -1,  1)\
+        ( 1,  1, -1)\
 
         """
         vertices = [
@@ -76,3 +80,13 @@ class Tetrahedron:
             [-1, -1, 1],
         ]
         return vertices
+
+    @staticmethod
+    def calc_face_area(a) -> float:
+        """
+
+        """
+        face_area = math.sqrt(3 / 4) * a * a
+        return face_area
+
+

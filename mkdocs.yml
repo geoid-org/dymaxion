@@ -177,11 +177,12 @@ nav:
   - Reference:
     - 'reference/index.md'
     - Polyhedron:
-      - 'Tetrahedron': 'reference/polyhedron/tetrahedron.md'
-      - 'Hexahedron': 'reference/polyhedron/hexahedron.md'
-      - 'Octahedron': 'reference/polyhedron/octahedron.md'
-      - 'Icosahedron': 'reference/polyhedron/icosahedron.md'
-      - 'Dodecahedron': 'reference/polyhedron/dodecahedron.md'
+      - 'reference/polyhedra/index.md'
+      - 'Tetrahedron': 'reference/polyhedra/tetrahedron.md'
+      - 'Hexahedron': 'reference/polyhedra/hexahedron.md'
+      - 'Octahedron': 'reference/polyhedra/octahedron.md'
+      - 'Icosahedron': 'reference/polyhedra/icosahedron.md'
+      - 'Dodecahedron': 'reference/polyhedra/dodecahedron.md'
   - Resources:
     - 'Glossary': 'resources/glossary.md'
     - 'Links': 'resources/links.md'
