@@ -3,7 +3,7 @@
 ## Overview
 
 <p align="center">
-    <img src="assets/image/polyhedra/icosahedron.gif" width="50%" height="50%" alt="Icosahedron">
+    <img src="/assets/image/polyhedra/icosahedron.gif" width="50%" height="50%" alt="Icosahedron">
 </p>
 
 ## References
