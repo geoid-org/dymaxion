@@ -92,8 +92,6 @@ plugins:
             show_bases: true
             show_source: false
 
-
-
 # Customization
 extra:
   generator: false
