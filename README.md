@@ -21,18 +21,18 @@
 <br/>
 <div align="center">
 
-  [![license](https://img.shields.io/github/license/geoid-org/dymaxion?color=green&label=license&style=flat-square)](LICENSE.md)
-  [![website](https://img.shields.io/website?color=blue&down_color=red&down_message=offline&label=website&style=flat-square&up_color=green&up_message=online&url=https%3A%2F%2Fwww.dymaxion.world)](https://www.dymaxion.world)
+  [![license](https://img.shields.io/github/license/geoid-org/dymaxion?color=green&label=license&style=flat)](LICENSE.md)
+  [![website](https://img.shields.io/website?color=blue&down_color=red&down_message=offline&label=website&style=flat&up_color=green&up_message=online&url=https%3A%2F%2Fwww.dymaxion.world)](https://www.dymaxion.world)
   [![DOI](https://zenodo.org/badge/584927070.svg)](https://zenodo.org/badge/latestdoi/584927070)
 
-  ![python](https://img.shields.io/pypi/pyversions/dymaxion?color=blue&label=python&style=flat-square)
-  ![wheel](https://img.shields.io/pypi/wheel/dymaxion?color=green&label=wheel&style=flat-square)
+  ![python](https://img.shields.io/pypi/pyversions/dymaxion?color=blue&label=python&style=flat)
+  ![wheel](https://img.shields.io/pypi/wheel/dymaxion?color=green&label=wheel&style=flat)
 
-  ![stars](https://img.shields.io/github/stars/geoid-org/dymaxion?color=blue&label=stars&style=flat-square)
-  ![forks](https://img.shields.io/github/forks/geoid-org/dymaxion?color=blue&label=forks&style=flat-square)
-  ![downloads](https://img.shields.io/github/downloads/geoid-org/dymaxion/total?color=blue&label=downloads&style=flat-square)
-  ![sponsors](https://img.shields.io/github/sponsors/starling-cloud?color=blue&label=sponsors&style=flat-square)
-  ![contributors](https://img.shields.io/github/contributors/geoid-org/dymaxion?color=blue&label=contributors&style=flat-square)
+  ![stars](https://img.shields.io/github/stars/geoid-org/dymaxion?color=blue&label=stars&style=flat)
+  ![forks](https://img.shields.io/github/forks/geoid-org/dymaxion?color=blue&label=forks&style=flat)
+  ![downloads](https://img.shields.io/github/downloads/geoid-org/dymaxion/total?color=blue&label=downloads&style=flat)
+  ![sponsors](https://img.shields.io/github/sponsors/starling-cloud?color=blue&label=sponsors&style=flat)
+  ![contributors](https://img.shields.io/github/contributors/geoid-org/dymaxion?color=blue&label=contributors&style=flat)
 
 </div>
 
