@@ -30,7 +30,9 @@ import math
 # Import | Libraries
 
 # Import | Local Modules
-from ..utils.math import phi
+from ..utils.constants import (phi, ksi)
+from ._polyhedron import Polyhedron
+
 
 # =============================================================================
 # Variables
@@ -45,7 +47,7 @@ Num = Union[int, float]
 # Classes
 # =============================================================================
 
-class Hexahedron:
+class Hexahedron(Polyhedron):
     """
     Hexahedron Class
 
@@ -177,3 +179,21 @@ class Hexahedron:
         """
         face_angles = phi / 2
         return face_angles
+
+    @staticmethod
+    def calc_angle_solid_vertex() -> float:
+        """
+        Solid angle at a vertex subtended by a face
+        (approx. 1.57080 steradians)
+
+        """
+        angle = math.pi / 2
+        return angle
+
+    @staticmethod
+    def calc_angle_solid_face() -> float:
+        """
+
+        """
+        angle = (2 * math.pi) / 3
+        return angle

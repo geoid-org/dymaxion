@@ -12,7 +12,8 @@
 
 - [Wikipedia | Icosahedron](https://en.wikipedia.org/wiki/Icosahedron)
 - [Wikipedia | Regular Icosahedron](https://en.wikipedia.org/wiki/Regular_icosahedron)
-
+- [Wolfram Mathworld | Icosahedron](https://mathworld.wolfram.com/Icosahedron.html)
+- [Wolfram Mathworld | Regular Icosahedron](https://mathworld.wolfram.com/RegularIcosahedron.html)
 
 ## Class Documentation
 

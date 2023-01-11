@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
 
 
-from .math import *
+from .constants import *

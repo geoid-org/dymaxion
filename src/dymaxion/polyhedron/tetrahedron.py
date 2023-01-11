@@ -31,8 +31,8 @@ import math
 # Import | Libraries
 
 # Import | Local Modules
-from ..utils.math import phi
-
+from ..utils.constants import (phi, ksi)
+from ._polyhedron import Polyhedron
 
 # =============================================================================
 # Variables
@@ -47,7 +47,7 @@ Num = Union[int, float]
 # Classes
 # =============================================================================
 
-class Tetrahedron:
+class Tetrahedron(Polyhedron):
     """
     Tetrahedron Class
 
@@ -200,7 +200,7 @@ class Tetrahedron:
         return angle
 
     @staticmethod
-    def calc_angle_solid(a) -> float:
+    def calc_angle_solid_vertex() -> float:
         """
         Solid angle at a vertex subtended by a face
         (approx. 0.55129 steradians)
@@ -208,6 +208,14 @@ class Tetrahedron:
 
         """
         angle = math.acos(23 / 27)
+        return angle
+
+    @staticmethod
+    def calc_angle_solid_face() -> float:
+        """
+
+        """
+        angle = math.pi
         return angle
 
     @staticmethod

@@ -30,7 +30,8 @@ import math
 # Import | Libraries
 
 # Import | Local Modules
-from ..utils.math import phi
+from ..utils.constants import (phi, ksi)
+from ._polyhedron import Polyhedron
 
 
 # =============================================================================
@@ -46,7 +47,7 @@ Num = Union[int, float]
 # Classes
 # =============================================================================
 
-class Dodecahedron:
+class Dodecahedron(Polyhedron):
     """
     Dodecahedron Class
 
@@ -61,10 +62,20 @@ class Dodecahedron:
         dodecahedron centered at the origin and suitably scaled and oriented:
 
         Vertex coordinates:
+
+        Position 1
+        (  ±1,   ±1,   ±1)
+        (   0, ±1/ϕ,   ±ϕ)
+        (±1/ϕ,   ±ϕ,    0)
+        (  ±ϕ,    0, ±1/ϕ)
+
+        or:
+
+        Position 2
         (  ±1,   ±1,   ±1)
         (   0,   ±ϕ, ±1/ϕ)
-        (±1/ϕ,    0,   ±ϕ)
         (  ±ϕ, ±1/ϕ,    0)
+        (±1/ϕ,    0,   ±ϕ)
 
         """
         vertices = [
@@ -76,19 +87,41 @@ class Dodecahedron:
             [1, -1, 1],
             [1, 1, -1],
             [1, 1, 1],
-            [0, -phi, -(1 / phi)],
-            [0, -phi, (1 / phi)],
-            [0, phi, -(1 / phi)],
-            [0, phi, (1 / phi)],
+            [0, -(1 / phi), -phi],
+            [0, -(1 / phi), phi],
+            [0, (1 / phi), -phi],
+            [0, (1 / phi), phi],
+            [-(1 / phi), -phi, 0],
+            [-(1 / phi), phi, 0],
+            [(1 / phi), -phi, 0],
+            [(1 / phi), phi, 0],
             [-phi, 0, -(1 / phi)],
             [-phi, 0, (1 / phi)],
             [phi, 0, -(1 / phi)],
             [phi, 0, (1 / phi)],
-            [-phi, -(1 / phi), 0],
-            [-phi, (1 / phi), 0],
-            [phi, -(1 / phi), 0],
-            [phi, (1 / phi), 0],
         ]
+        # vertices = [ # Position 2
+        #     [-1, -1, -1],
+        #     [-1, -1, 1],
+        #     [-1, 1, -1],
+        #     [-1, 1, 1],
+        #     [1, -1, -1],
+        #     [1, -1, 1],
+        #     [1, 1, -1],
+        #     [1, 1, 1],
+        #     [0, -phi, -(1 / phi)],
+        #     [0, -phi, (1 / phi)],
+        #     [0, phi, -(1 / phi)],
+        #     [0, phi, (1 / phi)],
+        #     [-phi, -(1 / phi), 0],
+        #     [-phi, (1 / phi), 0],
+        #     [phi, -(1 / phi), 0],
+        #     [phi, (1 / phi), 0],
+        #     [-phi, 0, -(1 / phi)],
+        #     [-phi, 0, (1 / phi)],
+        #     [phi, 0, -(1 / phi)],
+        #     [phi, 0, (1 / phi)],
+        # ]
         return vertices
 
     @staticmethod
@@ -153,3 +186,21 @@ class Dodecahedron:
         radius = a * 0.25 * (3 + math.sqrt(5))
         # radius = a * (1 / 4) * (3 + math.sqrt(5))
         return radius
+
+    @staticmethod
+    def calc_angle_solid_vertex() -> float:
+        """
+        Solid angle at a vertex subtended by a face
+        (approx. 2.96174 steradians)
+
+        """
+        angle = math.pi - math.atan(2 / 11)
+        return angle
+
+    @staticmethod
+    def calc_angle_solid_face() -> float:
+        """
+
+        """
+        angle = math.pi / 3
+        return angle

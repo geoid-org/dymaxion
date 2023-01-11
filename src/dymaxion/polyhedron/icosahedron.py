@@ -30,7 +30,9 @@ import math
 # Import | Libraries
 
 # Import | Local Modules
-from ..utils.math import phi
+from ..utils.constants import (phi, ksi)
+from ._polyhedron import Polyhedron
+
 
 # =============================================================================
 # Variables
@@ -45,7 +47,7 @@ Num = Union[int, float]
 # Classes
 # =============================================================================
 
-class Icosahedron:
+class Icosahedron(Polyhedron):
     """
     Icosahedron Class
     =================
@@ -59,29 +61,49 @@ class Icosahedron:
         12 principal directions in 3D space: points on an unit Icosahedron.
 
         Vertex coordinates:
+
+        Position 1
         ( 0, ±1, ±φ)
         (±1, ±φ,  0)
         (±φ,  0, ±1)
+
         or:
+        
+        Position 2
         ( 0, ±φ, ±1)
         (±φ, ±1,  0)
         (±1,  0, ±φ)
 
         """
+
         vertices = [
-            [0, phi, 1],
-            [0, phi, -1],
-            [0, -phi, 1],
-            [0, -phi, -1],
-            [1, 0, phi],
-            [1, 0, -phi],
-            [-1, 0, phi],
-            [-1, 0, -phi],
-            [phi, 1, 0],
-            [phi, -1, 0],
-            [-phi, 1, 0],
-            [-phi, -1, 0],
+            [0, -1, -phi],
+            [0, -1, phi],
+            [0, 1, -phi],
+            [0, 1, phi],
+            [-1, -phi, 0],
+            [-1, phi, 0],
+            [1, -phi, 0],
+            [1, phi, 0],
+            [-phi, 0, -1],
+            [-phi, 0, 1],
+            [phi, 0, -1],
+            [phi, 0, 1],
         ]
+        # vertices = [ # other config
+        #     [0, phi, 1],
+        #     [0, phi, -1],
+        #     [0, -phi, 1],
+        #     [0, -phi, -1],
+        #     [1, 0, phi],
+        #     [1, 0, -phi],
+        #     [-1, 0, phi],
+        #     [-1, 0, -phi],
+        #     [phi, 1, 0],
+        #     [phi, -1, 0],
+        #     [-phi, 1, 0],
+        #     [-phi, -1, 0],
+        # ]
         return vertices
 
     @staticmethod
@@ -90,11 +112,14 @@ class Icosahedron:
         20 faces
         """
         faces = [
-            [0, 5, 1], [0, 3, 5], [0, 2, 3], [0, 4, 2], [0, 1, 4],
-            [1, 5, 8], [5, 3, 10], [3, 2, 7], [2, 4, 11], [4, 1, 9],
-            [7, 11, 6], [11, 9, 6], [9, 8, 6], [8, 10, 6], [10, 7, 6],
-            [2, 11, 7], [4, 9, 11], [1, 8, 9], [5, 10, 8], [3, 7, 10],
+
         ]
+        # faces = [# other config
+        #     [0, 5, 1], [0, 3, 5], [0, 2, 3], [0, 4, 2], [0, 1, 4],
+        #     [1, 5, 8], [5, 3, 10], [3, 2, 7], [2, 4, 11], [4, 1, 9],
+        #     [7, 11, 6], [11, 9, 6], [9, 8, 6], [8, 10, 6], [10, 7, 6],
+        #     [2, 11, 7], [4, 9, 11], [1, 8, 9], [5, 10, 8], [3, 7, 10],
+        # ]
         return faces
 
     @staticmethod
@@ -157,3 +182,21 @@ class Icosahedron:
         # radius = 0.25 * (1 + math.sqrt(5)) * a
         # radius = a * math.cos(phi / 5)
         return radius
+
+    @staticmethod
+    def calc_angle_solid_vertex() -> float:
+        """
+        Solid angle at a vertex subtended by a face
+        (approx. 2.63455 steradians)
+
+        """
+        angle = 2 * math.pi - 5 * math.asin(2 / 3)
+        return angle
+
+    @staticmethod
+    def calc_angle_solid_face() -> float:
+        """
+
+        """
+        angle = math.pi / 5
+        return angle
