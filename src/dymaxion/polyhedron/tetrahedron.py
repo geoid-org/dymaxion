@@ -83,7 +83,7 @@ class Tetrahedron(Polyhedron):
         return vertices
 
     @staticmethod
-    def calc_area_from_edge_length(a: float | int) -> float:
+    def calc_area(a: float | int) -> float:
         """
         Calculate Area Static Method
         ----------------------------
@@ -102,7 +102,7 @@ class Tetrahedron(Polyhedron):
         return area
 
     @staticmethod
-    def calc_volume_from_edge_length(a: float | int) -> float:
+    def calc_volume(a: float | int) -> float:
         """
         Calculate Volume Static Method
         ------------------------------
@@ -126,6 +126,8 @@ class Tetrahedron(Polyhedron):
         """
 
         """
+        # face_area = a * 0.25 * math.sqrt(3)
+        # # face_area = a * (1 / 4) * math.sqrt(3)
         face_area = math.sqrt(3 / 4) * a * a
         return face_area
 
@@ -171,7 +173,7 @@ class Tetrahedron(Polyhedron):
         return angle
 
     @staticmethod
-    def calc_angle_face_edge_face(a) -> float:
+    def calc_angle_dihedral() -> float:
         """
         Face-edge-face angle, i.e., "dihedral angle"
         (approx. 70.5288°)
@@ -182,9 +184,10 @@ class Tetrahedron(Polyhedron):
         return angle
 
     @staticmethod
-    def calc_face_angle_face_edge_face(a) -> float:
+    def calc_angle_subtended() -> float:
         """
         Vertex-Center-Vertex angle
+        calc_face_angle_face_edge_face
         The angle between lines from the tetrahedron center to any two
         vertices. It is also the angle between Plateau borders at a vertex.
         In chemistry it is called the tetrahedral bond angle. This angle
@@ -223,9 +226,11 @@ class Tetrahedron(Polyhedron):
         """
         Radius of circumsphere
 
+        0.61237
         """
         # radius = (math.sqrt(6) / 4) * a
         radius = math.sqrt(3 / 8) * a
+        radius = a * 0.25 * math.sqrt(6)
         return radius
 
     @staticmethod
@@ -233,7 +238,10 @@ class Tetrahedron(Polyhedron):
         """
         Radius of insphere that is tangent to faces
 
+        0.20412
+        
         """
+        radius = a * (1 / 12) * math.sqrt(6)
         # radius = (1 / 3) * Tetrahedron.calc_radius_circumsphere(a)
         radius = a / math.sqrt(24)
         return radius
@@ -243,9 +251,13 @@ class Tetrahedron(Polyhedron):
         """
         Radius of midsphere that is tangent to edges
 
+        0.35355
+
         """
         # radius = math.sqrt(Tetrahedron.calc_radius_circumsphere(a) * Tetrahedron.calc_radius_insphere(a))  # noqa E501
-        radius = a / math.sqrt(8)
+        radius = a * 0.25 * math.sqrt(2)
+        # radius = a * (1 / 4) * math.sqrt(2)
+        # radius = a / math.sqrt(8)
         return radius
 
     @staticmethod

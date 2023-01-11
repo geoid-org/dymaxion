@@ -123,7 +123,7 @@ class Icosahedron(Polyhedron):
         return faces
 
     @staticmethod
-    def calc_area_from_edge_length(a: float | int) -> float:
+    def calc_area(a: float | int) -> float:
         """
 
         Formula to calculate area of Icosahedron
@@ -132,7 +132,7 @@ class Icosahedron(Polyhedron):
         return area
 
     @staticmethod
-    def calc_volume_from_edge_length(a: float | int) -> float:
+    def calc_volume(a: float | int) -> float:
         """
 
         Formula to calculate volume of Icosahedron
@@ -165,8 +165,9 @@ class Icosahedron(Polyhedron):
         ~ 0.7557613141 * a
 
         """
+        # radius = a * (1 / 12) * (3 * math.sqrt(3) + math.sqrt(15))
         # radius = (phi * phi * a) / (2 * math.sqrt(3))
-        radius = (math.sqrt(3) / 12) * (3 + math.sqrt(5)) * a
+        radius = a * (math.sqrt(3) / 12) * (3 + math.sqrt(5))
         return radius
 
     @staticmethod
@@ -200,3 +201,34 @@ class Icosahedron(Polyhedron):
         """
         angle = math.pi / 5
         return angle
+
+    @staticmethod
+    def calc_angle_dihedral() -> float:
+        """
+        Face-edge-face angle, i.e., "dihedral angle"
+        (approx. 138.190)
+
+        """
+        angle = math.acos((-1 / 3) * math.sqrt(5))
+        return angle
+
+    @staticmethod
+    def calc_angle_subtended(a) -> float:
+        """
+        Vertex-Center-Vertex angle
+        calc_face_angle_face_edge_face
+        The angle between lines from the dodecahedron center to any two
+        vertices. It is also the angle between Plateau borders at a vertex.
+        In chemistry it is called the tetrahedral bond angle. This angle
+        (in radians) is also the length of the circular arc on the unit sphere
+        resulting from centrally projecting one edge of the dodecahedron to the
+        sphere.
+
+        (approx. 63.435)
+
+        """
+        angle = math.acos((1 / 5) * math.sqrt(5))
+        return angle
+
+
+

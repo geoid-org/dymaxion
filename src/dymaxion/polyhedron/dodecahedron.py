@@ -125,7 +125,7 @@ class Dodecahedron(Polyhedron):
         return vertices
 
     @staticmethod
-    def calc_area_from_edge_length(a: float | int) -> float:
+    def calc_area(a: float | int) -> float:
         """
 
         Formula to calculate area of Dodecahedron
@@ -137,14 +137,15 @@ class Dodecahedron(Polyhedron):
         return area
 
     @staticmethod
-    def calc_volume_from_edge_length(a: float | int) -> float:
+    def calc_volume(a: float | int) -> float:
         """
 
         Formula to calculate volume of Dodecahedron
         """
-        volume = 0.25 * (15 + 7 * math.sqrt(5)) * a * a * a
-        # volume = (1 / 4) * (15 + 7 * math.sqrt(5)) * a * a * a
-        return volume
+        _ = 0.25 * (15 + 7 * math.sqrt(5)) * a * a * a
+        # _ = ((15 + 7 * math.sqrt(5)) * a * a * a) / 4
+        # _ = (1 / 4) * (15 + 7 * math.sqrt(5)) * a * a * a
+        return _
 
     @staticmethod
     def calc_radius_circumsphere(a) -> float:
@@ -156,7 +157,9 @@ class Dodecahedron(Polyhedron):
         ~ 1.401258538 * a
 
         """
-        radius = a * (math.sqrt(3) / 4) * (1 + math.sqrt(5))
+        radius = a * 0.25 * (math.sqrt(15) + math.sqrt(3))
+        # radius = a * (1 / 4) * (math.sqrt(15) + math.sqrt(3))
+        # radius = a * (math.sqrt(3) / 4) * (1 + math.sqrt(5))
         return radius
 
     @staticmethod
@@ -169,7 +172,9 @@ class Dodecahedron(Polyhedron):
         ~ 1.113516364 * a
 
         """
-        radius = a * 0.5 * math.sqrt(2.5 + 1.1 * math.sqrt(5))
+        radius = a * 0.05 * math.sqrt(250 + 110 * math.sqrt(5))
+        # radius = a * (1 / 20) * math.sqrt(250 + 110 * math.sqrt(5))
+        # radius = a * 0.5 * math.sqrt(2.5 + 1.1 * math.sqrt(5))
         # radius = a * (1 / 2) * math.sqrt((5 / 2) + (11 / 10) * math.sqrt(5))
         return radius
 
@@ -203,4 +208,32 @@ class Dodecahedron(Polyhedron):
 
         """
         angle = math.pi / 3
+        return angle
+
+    @staticmethod
+    def calc_angle_dihedral() -> float:
+        """
+        Face-edge-face angle, i.e., "dihedral angle"
+        (approx. 116.565)
+
+        """
+        angle = math.acos((-1 / 5) * math.sqrt(5))
+        return angle
+
+    @staticmethod
+    def calc_angle_subtended(a) -> float:
+        """
+        Vertex-Center-Vertex angle
+        calc_face_angle_face_edge_face
+        The angle between lines from the dodecahedron center to any two
+        vertices. It is also the angle between Plateau borders at a vertex.
+        In chemistry it is called the tetrahedral bond angle. This angle
+        (in radians) is also the length of the circular arc on the unit sphere
+        resulting from centrally projecting one edge of the dodecahedron to the
+        sphere.
+
+        (approx. 41.810)
+
+        """
+        angle = math.acos((1 / 3) * math.sqrt(5))
         return angle
