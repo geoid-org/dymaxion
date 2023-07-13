@@ -7,7 +7,7 @@
 
 """
 Provides Hexahedron Class
-===================
+=========================
 ...
 
 Todo:
@@ -50,8 +50,10 @@ Num = Union[int, float]
 class Hexahedron(Polyhedron):
     """
     Hexahedron Class
+    ================
 
     Regular unit cube.
+
     """
 
     @staticmethod
@@ -182,8 +184,6 @@ class Hexahedron(Polyhedron):
         """
         face_angles = phi / 2
         return face_angles
-
-
 
     @staticmethod
     def calc_angle_solid_face() -> float:

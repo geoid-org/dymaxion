@@ -50,14 +50,17 @@ Num = Union[int, float]
 class Octahedron(Polyhedron):
     """
     Octahedron Class
+    ================
 
     Regular unit Octahedron.
+
     """
 
     @staticmethod
     def vertices() -> List[Num]:
         """
         Vertices Static Method
+        ----------------------
 
         Vertex coordinates:
         (±1,  0,  0)
@@ -74,7 +77,6 @@ class Octahedron(Polyhedron):
             [0, 0, 1],
         ]
         return vertices
-
 
     @staticmethod
     def calc_area(a: float | int) -> float:
@@ -180,7 +182,7 @@ class Octahedron(Polyhedron):
     @staticmethod
     def calc_angle_subtended() -> float:
         """
-        angles beta subtended by an edge from the center for the Platonic 
+        angles beta subtended by an edge from the center for the Platonic
         solids (Cundy and Rollett 1989, Table II following p. 144).
         Vertex-Center-Vertex angle
         calc_face_angle_face_edge_face
@@ -196,5 +198,3 @@ class Octahedron(Polyhedron):
         """
         angle = math.pi / 2
         return angle
-
-

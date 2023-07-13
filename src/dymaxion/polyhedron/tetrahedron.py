@@ -50,8 +50,10 @@ Num = Union[int, float]
 class Tetrahedron(Polyhedron):
     """
     Tetrahedron Class
+    =================
 
     Regular unit cube.
+
     """
 
     @staticmethod
@@ -239,7 +241,7 @@ class Tetrahedron(Polyhedron):
         Radius of insphere that is tangent to faces
 
         0.20412
-        
+
         """
         radius = a * (1 / 12) * math.sqrt(6)
         # radius = (1 / 3) * Tetrahedron.calc_radius_circumsphere(a)

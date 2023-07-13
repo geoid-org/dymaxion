@@ -7,7 +7,7 @@
 
 """
 Provides Dodecahedron Class
-===================
+===========================
 ...
 
 Todo:
@@ -50,6 +50,7 @@ Num = Union[int, float]
 class Dodecahedron(Polyhedron):
     """
     Dodecahedron Class
+    ==================
 
     """
 
