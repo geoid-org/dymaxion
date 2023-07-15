@@ -53,6 +53,7 @@ class Icosahedron(Polyhedron):
     =================
 
     Regular unit icosahedron.
+
     """
 
     @staticmethod
@@ -68,7 +69,7 @@ class Icosahedron(Polyhedron):
         (±φ,  0, ±1)
 
         or:
-        
+
         Position 2
         ( 0, ±φ, ±1)
         (±φ, ±1,  0)
