@@ -160,7 +160,7 @@ class Icosahedron(Polyhedron):
     def calc_radius_insphere(a) -> float:
         """
         Radius of insphere that is tangent to faces
-        The radius of an inscribed sphere (tangent to each of the 
+        The radius of an inscribed sphere (tangent to each of the
         icosahedron's faces) is
 
         ~ 0.7557613141 * a
@@ -230,6 +230,3 @@ class Icosahedron(Polyhedron):
         """
         angle = math.acos((1 / 5) * math.sqrt(5))
         return angle
-
-
-
