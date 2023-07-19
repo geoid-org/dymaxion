@@ -1,4 +1,4 @@
 {
-    "name": "earth-env",
-    "dockerFile": "Dockerfile",
+    "name": "devenv",
+    "dockerFile": "Dockerfile"
 } 
