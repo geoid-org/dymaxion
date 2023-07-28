@@ -20,7 +20,9 @@ class Hexagon(Polygon):
         return self.s * (math.sqrt(3) / 2)
 
     def perimeter(self):
-        """Return the perimeter of the hexagon."""
+        """
+        Return the perimeter of the hexagon.
+        """
         return self.s * 6
 
     def semiperimeter(self):
