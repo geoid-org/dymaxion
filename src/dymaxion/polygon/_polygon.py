@@ -146,7 +146,7 @@ class Polygon:
 
     def centroid(self):
         """
-        Return the centroid of the polygon. For regular polygons, 
+        Return the centroid of the polygon. For regular polygons,
         this is also the center of the circumcircle.
         """
         return (0, 0)  # For a regular polygon, the centroid is at the origin.
