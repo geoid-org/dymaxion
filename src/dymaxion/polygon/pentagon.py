@@ -3,6 +3,7 @@ from ._polygon import Polygon
 
 import math
 
+
 class Pentagon(Polygon):
 
     def __init__(self, side_length):
@@ -15,11 +16,11 @@ class Pentagon(Polygon):
 
     def circumradius(self):
         """Return the circumradius of the pentagon."""
-        return (1/2) * (1/math.sin(math.pi/5)) * self.s
+        return (1 / 2) * (1 / math.sin(math.pi / 5)) * self.s
 
     def inradius(self):
         """Return the inradius of the pentagon."""
-        return (1/2) * self.s * math.tan(math.pi/5)
+        return (1/2) * self.s * math.tan(math.pi / 5)
 
     def perimeter(self):
         """Return the perimeter of the pentagon."""
@@ -34,7 +35,9 @@ class Pentagon(Polygon):
         return self.inradius()
 
     def area_of_each_triangle(self):
-        """Return the area of each triangle formed by lines from center to vertices."""
+        """
+        Return the area of each triangle formed by lines from center to vertices.
+        """
         return self.area() / 5
 
     def interior_angles(self):
