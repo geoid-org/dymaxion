@@ -69,6 +69,7 @@ Whether you're a student tackling geometry for the first time, a researcher inve
 ## Quick Start
 
 > Install using PIP
+
 ```
 pip install dymaxion
 ```
@@ -93,7 +94,6 @@ Please refer to the [contribution guidelines](.github/CONTRIBUTING.md) for infor
 ## License
 
 Except where otherwise noted, **Dymaxion** by Geoid is licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International License"). To view a copy of this license, visit [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International License") or write to Creative Commons, 171 Second Street, Suite 300, San Francisco, CA 94105, USA.
-
 
 ## Disclaimer
 
