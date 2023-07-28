@@ -1,5 +1,6 @@
 from ._polygon import Polygon
 
+import math
 
 class Rectangle(Polygon):
     def __init__(self, length, width):
