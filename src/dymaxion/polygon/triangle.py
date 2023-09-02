@@ -32,7 +32,9 @@ class Triangle(Polygon):
         return self.perimeter() / 2
 
     def height(self) -> float:
-        """Return the heights of the triangle."""
+        """
+        Return the heights of the triangle.
+        """
         # In an equilateral triangle, all heights are equal.
         return [(self.s * math.sqrt(3)) / 2] * 3
 
