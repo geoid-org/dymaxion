@@ -50,6 +50,7 @@ class Polygon:
     """
     Polygon Class
     =============
+
     """
 
     def __init__(self, num_sides, side_length) -> None:
@@ -156,3 +157,63 @@ class Polygon:
         Return whether this polygon is similar to another polygon.
         """
         return self.n == other.n
+
+
+# ----------------------------------------------------------------
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+
+class Polygon:
+
+    def __init__(self, faces):
+        if not all(isinstance(face, Face) for face in faces):
+            raise TypeError("All elements in faces must be instances of Face class.")
+        self.faces = faces
+
+    def edges(self):
+        return [edge for face in self.faces for edge in face.edges()]
+
+    def vertices(self):
+        return [vertex for face in self.faces for vertex in face.vertices]
+
+    def num_faces(self):
+        return len(self.faces)
+
+    def num_edges(self):
+        return len(self.edges())
+
+    def num_vertices(self):
+        return len(self.vertices())
+
+    def surface_area(self):
+        # This method will depend on the specific type of polygon and is left for the user to implement
+        pass
+
+    def volume(self):
+        # This method will depend on the specific type of polygon and is left for the user to implement
+        pass
+
+    def centroid(self):
+        vertices = self.vertices()
+        x_coords = [v.x for v in vertices]
+        y_coords = [v.y for v in vertices]
+        z_coords = [v.z for v in vertices]
+        centroid_x = sum(x_coords) / len(vertices)
+        centroid_y = sum(y_coords) / len(vertices)
+        centroid_z = sum(z_coords) / len(vertices)
+        return Vertex(centroid_x, centroid_y, centroid_z)
+
+    def is_convex(self):
+        # This method will depend on the specific type of polygon and is left for the user to implement
+        pass
+
+    def draw(self):
+        fig = plt.figure()
+        ax = fig.add_subplot(111, projection='3d')
+        for face in self.faces:
+            vertices = [[v.x, v.y, v.z] for v in face.vertices]
+            ax.add_collection3d(plt.Polygon(vertices))
+        plt.show()
+
+    def __repr__(self):
+        return f"Polygon with {self.num_faces()} faces, {self.num_edges()} edges, and {self.num_vertices()} vertices"
